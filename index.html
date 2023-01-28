@@ -8,6 +8,40 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
+  <section class="pop-up">
+    <div class="pop-up__container">
+    <h2 class="pop-up__title">ваш фидбек</h2>
+    <div class="pop-up__frequency">
+      <label class="pop-up__frequency__label">
+        <span class="pop-up__form__title">Как часто вы заходите на сайт?</span>
+         <select class="pop-up__frequency__box" placeholder="Почти каждый день" name="frequency">
+          <option>Почти каждый день</option>
+          <option>Раз в несколько дней</option>
+          <option>Раз в несколько недель</option>
+          <option>Несколько раз в год</option>
+         </select>
+      </label>
+    </div>
+    <div class="pop-up__signup">
+      <span class="pop-up__form__title">Вы подписаны на e-mail рассылку?</span>
+      <div class="pop-up__signup__checkbox__container">
+        <label class="pop-up__signup__checkbox">
+          <input class="pop-up__signup__checkbox__status" type="radio" name="signup-status" value="yes" checked>
+          <span class="pop-up__signup__text">Да</span>
+        </label>
+       <label class="pop-up__signup__checkbox">
+         <input class="pop-up__signup__checkbox__status" type="radio" name="signup-status" value="no">
+         <span class="pop-up__signup__text">Нет</span>
+       </label>
+      </div>
+    </div>
+    <div class="pop-up__feedback">
+      <span class="pop-up__form__title">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+      <textarea class="pop-up__feedback__text" placeholder="Может, больше рецептов?" name="feedback-text" required></textarea>  
+    </div>
+    <button class="pop-up__button" type="submit">отправить</button>
+    </div>
+  </section>
     <header class="header-container">
         <div class="header-container__top">
             <a href="#0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 3070 696" class="header-logo" alt="logo">
@@ -50,7 +84,7 @@
     <section class="trends">
         <h2 class="trends-header">сейчас в тренде</h2>
         <div class="trends-card__reel">
-            <article class="trends-card trends-card_1">
+            <article class="trends-card trends-card__garden">
                 <!-- <img src="images/trend1.jpg" class="trends-card__image" alt="симпатичная рассада">  -->
                 <div class="trends-card__info">
                     <ul class="trends-card__category">
@@ -60,7 +94,7 @@
                      <h2 class="trends-card__title"><a href="0" class="card-title__link">сейчас в тренде: сад на подоконнике</a></h2>
                 </div>
             </article>
-            <article class="trends-card trends-card_2"> 
+            <article class="trends-card trends-card__cheese"> 
               <!-- <img src="images/trend2.jpg" class="trends-card__image" alt="сыры на сырах сырами погоняют">  -->
               <div class="trends-card__info">
                   <ul class="trends-card__category">
@@ -69,7 +103,7 @@
                    <h2 class="trends-card__title"><a href="0" class="card-title__link">сыры на красивых  картинках из интернета: какие они на вкус?</a></h2>
               </div>
             </article>
-            <article class="trends-card trends-card_3"> 
+            <article class="trends-card trends-card__hiking"> 
               <!-- <img src="images/trend3.jpg" class="trends-card__image" alt="девушка смотрит на гористую местность">  -->
               <div class="trends-card__info">
                     <ul class="trends-card__category">
@@ -79,7 +113,7 @@
                      <h2 class="trends-card__title"><a href="0" class="card-title__link">собираемся в первый поход в горы</a></h2>
                 </div>
             </article>
-            <article class="trends-card trends-card_4">
+            <article class="trends-card trends-card__lemons">
               <!-- <img src="images/trend4.jpg" class="trends-card__image" alt="свежие лимоны в корзине"> -->
               <div class="trends-card__info">
                 <ul class="trends-card__category">
@@ -97,7 +131,7 @@
           
           <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" class="article-card__image" alt="Человек идёт по берегу моря в ясный день"> 
           
-          <section class="article-card__info">
+          <div class="article-card__info">
             
             <ul class="article-card__category">
               <li class="article-card__category__item"><a href="#0" class="article-card__category__link">travel</a></li> 
@@ -112,14 +146,14 @@
             
             <p class="article-card__text">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?</p>
             
-          </section>
+          </div>
           
         </article>
         <article class="article-card">
           
           <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg" class="article-card__image" alt="Женщина занимается йогой на берегу моря"> 
           
-          <section class="article-card__info">
+          <div class="article-card__info">
             
             <ul class="article-card__category">
               <li class="article-card__category__item"><a href="#0" class="article-card__category__link">health</a></li> 
@@ -135,14 +169,14 @@
             
             <p class="article-card__text">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
             
-          </section>
+          </div>
           
         </article>
         <article class="article-card">
          
           <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg" class="article-card__image" alt="Девушка сидит на плечах на концерте"> 
           
-          <section class="article-card__info">
+          <div class="article-card__info">
             
             <ul class="article-card__category">
               <li class="article-card__category__item"><a href="#0" class="article-card__category__link">music</a></li> </ul>         
@@ -154,16 +188,16 @@
               <span class="article-card__author">Неизвестный автор</span>
               </div>
             
-            <p class="article-card__text">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку? Мы составили список лучших летних фестивалей по всему миру.</p>
+            <p class="article-card__text">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?<br> Мы составили список лучших летних фестивалей по всему миру.</p>
             
-          </section>
+            </div>
           
         </article>
         <article class="article-card">
           
           <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" class="article-card__image" alt="Эстетичная сервировка стола в светлых цветах"> 
           
-          <section class="article-card__info">
+          <div class="article-card__info">
             
             <ul class="article-card__category">
               <li class="article-card__category__item"><a href="#0" class="article-card__category__link">lifestyle</a></li> 
@@ -179,14 +213,14 @@
             
             <p class="article-card__text">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
             
-          </section>
+            </div>
           
         </article>
         <article class="article-card">
           
           <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg" class="article-card__image" alt="Подушка с надписью на английском Место для тусовки"> 
           
-          <section class="article-card__info">
+          <div class="article-card__info">
             
             <ul class="article-card__category">
               <li class="article-card__category__item"><a href="#0" class="article-card__category__link">lifestyle</a></li> 
@@ -203,7 +237,7 @@
             
             <p class="article-card__text">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
             
-          </section>
+            </div>
           
         </article>
       </main>
@@ -211,41 +245,41 @@
       <aside class="side-bar">
         <section class="latest-posts">
           <h3 class="side-bar__title">Новые посты</h3>
-            <div class="latest-posts__card">
+            <article class="latest-posts__card">
               <img src="images/2.jpg" class="latest-posts__card__img" alt="Человек идёт по берегу моря в ясный день">
               <div class="latest-posts__card__info">
                 <time class="card__date">14 июня 2019</time>
                 <h4 class="latest-posts__card__title"><a href="" class="card-title__link">10 мест, ради которых стоит проснуться</a></h4>
             </div>
-           </div>
-            <div class="latest-posts__card">
+           </article>
+            <article class="latest-posts__card">
               <img src="images/151.jpg" class="latest-posts__card__img" alt="Женщина занимается йогой на берегу моря">
               <div class="latest-posts__card__info">
                 <time class="card__date">14 июня 2019</time>
                 <h4 class="latest-posts__card__title"><a href="" class="card-title__link">Йога для домашних</a></h4>
             </div>
-           </div>
-            <div class="latest-posts__card">
+           </article>
+            <article class="latest-posts__card">
               <img src="images/45.jpg" class="latest-posts__card__img" alt="Уютое кресло и пианино">
               <div class="latest-posts__card__info">
                 <time class="card__date">14 июня 2019</time>
                 <h4 class="latest-posts__card__title"><a href="" class="card-title__link">Как мы превратили классное место в балкон</a></h4>
             </div>
-           </div>
-            <div class="latest-posts__card">
+           </article>
+            <article class="latest-posts__card">
               <img src="images/501.jpg" class="latest-posts__card__img" alt="Эстетичная сервировка стола в светлых цветах">
               <div class="latest-posts__card__info">
                 <time class="card__date">14 июня 2019</time>
                 <h4 class="latest-posts__card__title"><a href="" class="card-title__link">Кулинарный подход к науке</a></h4>
             </div>
-           </div>
-            <div class="latest-posts__card">
+           </article>
+            <article class="latest-posts__card">
               <img src="images/7.jpg" class="latest-posts__card__img" alt="три девушки с тёмными распущенными волосами, повёрнуты спиной">
               <div class="latest-posts__card__info">
                 <time class="card__date">14 июня 2019</time>
                 <h4 class="latest-posts__card__title"><a href="" class="card-title__link">Лучшие прически для распущенных волос</a></h4>
             </div>
-           </div>
+           </article>
         </section>
         
     
@@ -295,7 +329,7 @@
     <section class="shop">
       <h2 class="shop-header">наши изделия</h2>
       <div class="shop-reel">
-        <div class="shop-card">
+        <article class="shop-card">
           <picture>
             <source media="(max-width:640px)" srcset="images/shop-item-mobile1.jpg">
             <source media="(min-width:641px) and (max-width:1199px)" srcset="images/shop-item-tablet1.jpg">
@@ -303,7 +337,7 @@
             <img class="shop-card__image" src="images/shop-item-desk1.jpg" alt="Подушка с надписью на английском Место для тусовки"></picture>
           <div class="shop-card__info">
             <h2 class="shop-card__title">подушки на диван</h2>
-            <div class="shop-card__description">Набор из двух подушек с модными принтами. Видео о создании <span><a src="" class="shop-card__link">здесь.</a></span></div>
+            <p class="shop-card__description">Набор из двух подушек с модными принтами. Видео о создании <span><a src="" class="shop-card__link">здесь.</a></span></p>
             <div class="shop-card__footer">
               <div class="shop-card__price"><span class="shop-card__price__value__old">1000 ₽</span><span class="shop-card__price__value">800 ₽</span>
               </div>
@@ -311,8 +345,8 @@
             </div>
             
           </div>
-        </div>
-        <div class="shop-card">
+        </article>
+        <article class="shop-card">
           <picture>
             <source media="(max-width:640px)" srcset="images/shop-item-mobile2.jpg">
             <source media="(min-width:641px) and (max-width:1199px)" srcset="images/shop-item-tablet2.jpg">
@@ -320,7 +354,7 @@
           <img class="shop-card__image" src="images/shop-item-desk2.jpg" alt="яркая мягкая игрушка заяц в стиле тильда"></picture>
           <div class="shop-card__info">
             <h2 class="shop-card__title">Кукла "Зайчик"</h2>
-            <div class="shop-card__description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <span><a src="" class="shop-card__link">весенняя серия постов </a>в блоге и несколько подкастов.</span></div>
+            <p class="shop-card__description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <span><a src="" class="shop-card__link">весенняя серия постов </a>в блоге и несколько подкастов.</span></p>
             <div class="shop-card__footer">
               <div class="shop-card__price">
                 <span class="shop-card__price__value">3500 ₽</span>
@@ -329,8 +363,8 @@
             </div>
             
           </div>
-        </div>
-        <div class="shop-card">
+        </article>
+        <article class="shop-card">
           <picture>
             <source media="(max-width:640px)" srcset="images/shop-item-mobile3.jpg">
             <source media="(min-width:641px) and (max-width:1199px)" srcset="images/shop-item-tablet3.jpg">
@@ -338,7 +372,7 @@
           <img class="shop-card__image" src="images/shop-item-desk3.jpg" alt="шестиугольная рамка в белом интерьере">
           <div class="shop-card__info">
             <h2 class="shop-card__title">шестиугольная рамка</h2>
-            <div class="shop-card__description">Необычная рамка для украшения дома из видео <span><a src="" class="shop-card__link">«Как сделать рамку из подручных средств за 30 минут"</a></span></div>
+            <p class="shop-card__description">Необычная рамка для украшения дома из видео <span><a src="" class="shop-card__link">«Как сделать рамку из подручных средств за 30 минут"</a></span></p>
             <div class="shop-card__footer">
               <div class="shop-card__price">
                 <span class="shop-card__price__value__old">500 ₽</span><span class="shop-card__price__value">400 ₽</span>
@@ -347,7 +381,7 @@
             </div>
             
           </div>
-        </div>
+        </article>
       </div>
     </section>
     <footer class="footer-container">
