@@ -405,7 +405,7 @@ padding-left: 15px;
 @media (min-width:641px) and (max-width:1199px) and (orientation:portrait){
   .trends-card {
     width: calc(50% - 0.15rem);
-    height: 247px;
+   min-height: 247px;
   }
 
   .trends-card:nth-child(even) {
